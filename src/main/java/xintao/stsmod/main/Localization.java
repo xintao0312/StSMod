@@ -17,7 +17,7 @@ public class Localization implements EditStringsSubscriber
     @Override
     public void receiveEditStrings()
     {
-        String lang = "ZHS";
+        String lang = "zh_cn";
         
         BaseMod.loadCustomStringsFile(RelicStrings.class, CodeUtil.langPath(lang + "/relic.json"));
         BaseMod.loadCustomStringsFile(UIStrings.class, CodeUtil.langPath(lang + "/ui.json"));
