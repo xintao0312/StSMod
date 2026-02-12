@@ -1,5 +1,8 @@
 package xintao.stsmod.util;
 
+import org.jetbrains.annotations.Contract;
+import org.jetbrains.annotations.NotNull;
+
 public final class CodeUtil
 {
     public static final String Mod_ID = "xintaomod";
@@ -13,16 +16,22 @@ public final class CodeUtil
 
     private CodeUtil() {}
 
+    @NotNull
+    @Contract(pure = true)
     public static String of(String id)
     {
         return Mod_ID + ":" + id;
     }
 
+    @NotNull
+    @Contract(pure = true)
     public static String imgPath(String path)
     {
         return Mod_Img_Path + path;
     }
     
+    @NotNull
+    @Contract(pure = true)
     public static String langPath(String path)
     {
         return Mod_Lang_Path + path;
